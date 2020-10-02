@@ -11,12 +11,21 @@ import pandas as pd
 # ## Pandas Series !
 # A 1D array in numpy was called array !, which in pandas it is called a Series
 
-# In[4]:
-
+# In[3]:
 
 S1 = pd.Series([1,2,3,4])
 S2 = pd.Series([4,5,6, 0.1])
 print(S2)
+
+
+# In[4]:
+# Converting a panda Series to a numpy array
+S3=S1.to_numpy()
+S4=S2.to_numpy()
+S1.dtype
+S2.dtype
+S3.dtype
+S4.dtype
 
 
 # The vectorized operations are exactly like numpy arrays !!
